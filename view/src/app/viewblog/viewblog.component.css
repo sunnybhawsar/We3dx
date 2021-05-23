@@ -1,0 +1,44 @@
+.jumbo
+{
+  background-color: #E6EE9C;
+  height: 100vh;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.generate
+{
+  text-decoration: none;
+  cursor: pointer;
+}
+.generate:hover
+{
+  text-decoration: underline;
+}
+
+.socio
+{
+  height: 50px; 
+}
+.icons
+{
+  cursor: pointer;
+  font-size: 2em;
+  margin-left: 15px;
+}
+
+.fb
+{
+  color: #4267b2; 
+}
+.insta
+{
+  color: #e63d44;
+}
+.twit
+{
+  color: #1da1f2;
+}
+.linked
+{
+  color: #0077b5;
+}

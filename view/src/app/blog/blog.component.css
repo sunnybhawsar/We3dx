@@ -1,0 +1,190 @@
+/* latest css */
+.latest
+{
+ min-height: 100vh;
+ background-color: #ffffff;
+}
+
+.content1
+{
+ min-height: 60%;
+}
+.logo_div
+{
+ height:10vw; width: 12vw; margin-top: -20px;
+}
+@media only screen and (max-width: 886px)
+{
+.logo_div
+{
+ height:12vw; width: 15vw;  margin-top: 0px;
+}
+}
+
+.cont2
+{
+ /* height: 80px; */
+ text-align: center;
+ justify-content: center;
+ font-family: 'Expletus Sans','sans-serif';
+}
+.cont3
+{
+ /* height: auto; */
+ margin:0;
+ padding: 20px;
+ text-align: center;
+ justify-content: center;
+ font-family: 'ubuntu','Sans-Serif'; 
+ font-size: 18px;
+   text-align: justify;
+}
+
+.content2
+{
+ min-height: 40%;
+}
+
+.img_col
+{
+ height: 100%;
+ padding: 20px;
+ text-align: center;
+ justify-content: center;
+}
+
+.share_col
+{
+ height: 100%;
+ padding-top: 20px;
+}
+.goAhead
+{
+ font-family: 'Mallanna','sans-serif';
+text-align: center;
+justify-content: center;
+}
+.goAhead button
+{
+  font-size: 20px;
+}
+
+.share
+{
+ padding-top: 40px;
+ text-align: center;
+ justify-content: center;
+}
+.socio_row
+{
+ ;
+ justify-content: right;
+}
+.socio
+{
+ height: 50px; 
+}
+.icons
+{
+ cursor: pointer;
+ font-size: 2em;
+ margin-left: 15px;
+}
+
+.fb
+{
+ color: #4267b2; 
+}
+.insta
+{
+ color: #e63d44;
+}
+.twit
+{
+ color: #1da1f2;
+}
+.linked
+{
+ color: #0077b5;
+}
+
+
+                /* listall css */
+
+
+.listAll {
+  min-height: 100vh;
+  background-color: #ffffff;
+}
+
+.blognav {
+  padding: 1%
+}
+
+.blog-nav-link {
+  color: #fc3c1d;
+  font-family: 'Expletus Sans', cursive;
+  margin-left: 30%;
+  margin-right: 30%;
+  padding: 10px;
+  font-size: 150%;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: #fff;
+    background-color: #fc3c1d;
+}
+
+
+.blog-card {
+  background-color: #f9f9f9;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 0;
+}
+
+.blog-card-title {
+  font-family: 'Expletus Sans', cursive;
+
+}
+
+.blog-card-text {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 2;
+  height: 35vh;
+  font-family: 'Ubuntu', cursive;  
+}
+
+.page-link {
+  color: #fc3c1d;
+}
+
+@media only screen and (max-width: 567px) {
+  .blog-nav-link {
+    margin-left: 0%;
+    margin-right: 0%;
+  }
+}
+
+@media only screen and (max-width: 374px) {
+  .blog-nav-link {
+    margin-left: 0%;
+    margin-right: 0%;
+  }
+
+  .blog-card {
+    background-color: #f9f9f9;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 50vh;
+  }
+
+  .blog-card-text {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 2;
+  height: 22vh;
+  font-family: 'Expletus Sans', cursive;
+}
+}

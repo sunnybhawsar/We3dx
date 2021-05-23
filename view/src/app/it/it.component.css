@@ -1,0 +1,125 @@
+#main{
+    background-color: #d8d0bc;
+    min-height:100vh;
+    width:100%;
+    margin-right:0px;
+    margin-left:0px;
+    padding-left:10%;
+    padding-right:10%;
+}
+img{
+
+}
+
+span
+{
+    cursor: pointer;
+}
+#content_top img{
+    display:flex;
+    margin:auto;
+
+
+}
+#content_top > .col-md-3{
+    display:flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+}
+#content_bottom{
+
+}
+.clickable{
+    min-height: 25vh;
+    min-width:10%;
+}
+#top{
+    width:100%;
+}
+#content_top{
+    width:100%;
+    align-items:stretch;
+    padding:20px 0;
+}
+#content_top .card-body{
+    background-color: transparent;
+    border: none;
+}
+.toggle-container{
+    padding:20px 0;
+    background:transparent;
+    
+}
+.toggle-details1,.toggle-details2,.toggle-details3,.toggle-details4,.toggle-details5,.toggle-details6,.toggle-details7,.toggle-details8{
+    background:url('/assets/images/it/plus sign IT page.svg');
+    background-size: 100%;
+    height:4rem;
+    width: 4rem;
+    border-radius:2rem;
+    justify-self: center;
+    
+    border:none;
+    /* margin:auto; */
+    transition:background-image 0.2s;
+}
+.toggle-details1:clicked,.toggle-details2:clicked,.toggle-details3:clicked,.toggle-details4:clicked,.toggle-details5:clicked,.toggle-details6:clicked,.toggle-details7:clicked,.toggle-details8:clicked{
+    border:none;
+}
+
+#content_bottom{
+    width:100%;
+    align-items: flex-start;
+    padding: 20px 0;
+}
+
+#bottom_text p{
+    margin:auto;
+    font-size:1.5rem;
+    font-weight:700;
+    font-family: 'Assistant','sans-serif';
+
+}
+#logos{
+    background-color:#d8d0bc;
+}
+img{
+    color: #d8d0bc;
+}
+
+/*  .toggle-container[_ngcontent-c1] {
+    padding: 20px 0;
+    background: transparent;
+}*/
+
+@media only screen and (min-width: 0px) and (max-width: 578px) {
+    .toggle-container[_ngcontent-c1] {
+        padding: 0 0;
+        background: transparent;
+
+}
+#main{
+    background-color: #d8d0bc;
+    min-height:100vh;
+    width:100%;
+    margin-right:0px;
+    margin-left:0px;
+    padding-left:0%;
+    padding-right:0%;
+}
+}
+@media only screen and (min-width: 578px) {
+    .toggle-container[_ngcontent-c1] {
+        padding: 0 0;
+        background: transparent;
+
+}
+#main{
+    background-color: #d8d0bc;
+    min-height:100vh;
+    width:100%;
+    margin-right:0px;
+    margin-left:0px;
+    padding-left:10%;
+    padding-right:10%;
+}
+}

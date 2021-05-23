@@ -1,0 +1,25 @@
+<div class="container">
+  <div class="jumbotron" [style.background-color] = "blog.color">
+    <h1 class="display-4">{{ blog.title }}</h1>
+    <p class="lead">Published On: 21-July-2017</p>
+    <hr class="my-4">
+    <div [innerHtml]="blog.content | safe: 'html'">
+    </div>
+    <hr class="my-4">
+
+       <p class="lead"><span class="generate">Generate Shareable Link </span> <i class="fas fa-link"></i></p>
+
+  <div class="row fullwidth no-gutters share">
+       <h3>
+    Share with 
+    </h3>           
+
+          <div class="socio">
+            <i class="fab fa-facebook icons fb"></i>
+            <i class="fab fa-instagram icons insta"></i>
+            <i class="fab fa-twitter icons twit"></i>
+            <i class="fab fa-linkedin icons linked"></i>
+          </div>  
+  </div>
+  </div>
+</div>

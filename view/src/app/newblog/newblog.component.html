@@ -1,0 +1,24 @@
+<!-- Include stylesheet -->
+<link href="https://cdn.quilljs.com/1.3.6/quill.snow.css" rel="stylesheet">
+
+<div class="container-flex">
+  <form [formGroup]="form" class = "editor">
+    <div class="form-group">
+      <label for="blogTitle"><h4>Blog Title</h4></label>
+      <input type="text" #title class="form-control" [formControl]="form.controls['title']" id="blogTitle" aria-describedby="titleHelp" placeholder="Enter blog title">
+      <small id="titleHelp" class="form-text text-muted">Please enter an appropriate blog tiltle</small>
+    </div>
+
+    <div class="form-group">
+      <label for="blogTheme"><h4>Blog Theme</h4></label>
+      <input type="color" #title class="form-control1" [formControl]="form.controls['color']" id="blogTheme" aria-describedby="themeHelp" placeholder="Enter blog theme (colour scheme)">
+      <small id="themeHelp" class="form-text text-muted">Please enter a colour scheme</small>
+    </div>
+
+    <div class="form-group">
+      <label for="editor"><h4>Blog Content</h4></label>
+      <quill-editor #content [modules]="modules" [style]="{height: '50vh'}" [formControl]="form.controls['content']"></quill-editor>
+    </div>
+    <button class="btn btn-primary" (click)="fetchData()">Submit</button>
+  </form>
+</div>

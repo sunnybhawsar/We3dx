@@ -1,0 +1,1305 @@
+#main{
+    width:100%;
+    min-height:100vh;
+    } 
+    #spacer{
+        height:2vh;
+    }
+    p{
+        font-family: 'Assistant', sans-serif;
+    }
+
+
+#block1{
+    height:48vh;
+}
+#block2{
+    height:48vh;
+}
+
+#plus{
+    font-size:300%;
+}
+.collapse1 {
+    -webkit-transition: width 2s ease;
+    -moz-transition: width 2s ease;
+    -o-transition: width 2s ease;
+    transition: width 2s ease;
+    display: inline-block;
+    overflow: none;
+    white-space: nowrap;
+    vertical-align: middle;
+    height: 100%;
+    width: 0px;
+    background-color:  #fc4a1a;
+    background-image:linear-gradient(
+      to right,
+      #00ccd1 20%,
+      #fc4a1a 20%,
+      #fc4a1a 80%,
+      #fc4a1a 80%
+    );
+}
+.collapse1.in {
+    width: 100%;
+
+}
+.collapse2 {float:right;
+    -webkit-transition: width 2s ease;
+    -moz-transition: width 2s ease;
+    -o-transition: width 2s ease;
+    transition: width 2s ease;
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    vertical-align: middle;
+    height: 100%;
+    width: 0px;
+    background-color: #00ccd1;
+    background-image:linear-gradient(
+      to left,
+      #00ccd1 20%,
+      #fc4a1a 20%,
+      #fc4a1a 80%,
+      #fc4a1a 80%
+    );
+}
+.collapse2.in {
+    width: 100%;
+
+} 
+
+/*
+Media Query Break points are on:
+starting from 0px:
+->500px(Mobile View)
+->500px-800px(Mobile View)
+->800px-980px(Mobile View)
+->980px-1150px (Desktop View)
+->1150px-any larger(Desktop View)
+*/
+/*----------------------------------------------------*/
+@media only screen and (max-width: 500px) {
+    #mybreaksm4{
+       font-size: 0px;
+     }
+       #mybreaksm{
+           font-size: 0px;
+       }
+       
+       #mybreaklg{
+          display:none;
+       }
+       #clients{
+        float:left;
+        width:90%;
+    }
+    #clienttext{
+     font-family: 'Assistant', sans-serif;
+     color:#3a3735;
+     font-size:120%;
+     text-align: center;
+     font-weight:600;
+     
+    }
+   .texthere1{
+     color:white;
+     font-family: 'Assistant', sans-serif;
+     font-size:3.0vw;/*else use 150%*/ 
+     padding-top:20vw;
+     text-align: justify; 
+   }
+   .texthere2{
+     color:white;
+     font-family: 'Assistant', sans-serif;
+     font-size:2.7vw;/*else use 150%*/
+     padding-top:20vw;
+     text-align:justify;
+     padding-left:4vw;
+     
+   }
+   #midtext{
+    float:left;
+    font-family: 'Assistant', sans-serif;
+    color:#3a3735;
+    text-align:left;
+    width:90%;
+    line-height: 200%;
+    padding-top:8vh;
+   }
+   #mid1{
+      font-weight:bold;
+      font-size:100%; 
+   }
+   #mid2{
+       font-weight:bolder;
+       font-size:140%;
+   }
+   #toptext{float:left;
+       font-family: 'Assistant', sans-serif;  
+       height:100%;
+       width:90%;
+       font-size:80%;
+       padding-top: 4vh;
+       text-align: left;
+       line-height: 3vh;
+   }
+  
+   #plusarea1{
+       float:left;
+       width:35%;
+       height:100%;
+       cursor: pointer;
+   }
+   #filler1{
+   background-color: #00ccd1;
+       float:left;
+       width:15%;
+       height:100%;
+   }
+   #drawerarea1{
+       float:left;
+       
+       width:40%;
+       height:100%;
+   }
+   
+   #plusarea2{
+       float:right;
+       width:35%;
+       height:100%;
+       cursor: pointer;
+   }
+   #filler2{
+   background-color: #00ccd1;
+       float:right;
+       width:15%;
+       height:100%;
+   }
+   #drawerarea2{
+       float:right;
+       text-align: justify;
+       width:40%;
+       height:100%;
+   }
+   #plusareain1{
+       float:left;
+       background-color: #00ccd1; 
+       height:100%;
+       color: #3a3735;
+       width:100%;
+       font-weight:bolder;
+       text-align: center;
+       display: inline-block;
+       padding-top: 25vw;
+       font-size: 5.0vw;
+       line-height:100%;
+       background-image:linear-gradient(
+         to right,
+         white 50%,
+         #00ccd1 50%,
+         #00ccd1 50%,
+         #00ccd1 50%
+       );
+     
+   } 
+   #plusareain2{
+       float:left;
+       background-color: #00ccd1; 
+       height:100%;
+       width:100%;
+       color: #3a3735;
+       font-weight:bolder;
+       text-align: center;
+       display: inline-block;
+       padding-top: 28vw;
+       font-size: 5.0vw;
+       line-height:100%;
+       background-image:linear-gradient(
+         to left,
+         white 50%,
+         #00ccd1 50%,
+         #00ccd1 50%,
+         #00ccd1 50%
+       );
+     
+   } 
+   #plusareain1i{
+       float:left;
+       background-color: #00ccd1; 
+       height:100%;
+       width:100%;
+       color: #3a3735;
+       font-weight:bolder;
+       text-align: center;
+       display: inline-block;
+       padding-top: 20vw;
+       font-size: 3.8vw;
+       line-height:130%;
+       background-image:linear-gradient(
+         to right,
+         white 50%,
+         #00ccd1 50%,
+         #00ccd1 50%,
+         #00ccd1 50%
+       );
+     
+   }
+   #left_10{/*for 10% space in float left*/
+       float:left;
+       width:5%;
+       height:100%;
+   }
+   #left_10_large{
+       width:0%;
+       float:left;
+       height:100%;
+   }
+   #right_10{/*for 10% space in float right*/
+       float: right;;
+       width:5%;
+       height:100%;
+   }
+   #right_10_large{
+       width:0%;
+       float:right;
+       height:100%;
+   }
+   }
+   /*------------------------------------------------------------------------------------*/
+   @media only screen and (min-width: 500px)and (max-width: 800px)  {/*500 to 800px*/
+       #mybreaksm4{
+           font-size: 0px;
+       }
+       #mybreaksm{
+           font-size: 0px;
+       }
+       #mybreaklg{
+          display:none;
+       }
+       #clients{
+        float:left;
+        width:90%;
+    }
+    #clienttext{
+     font-family: 'Assistant', sans-serif;
+     color:#3a3735;
+     font-size:120%;
+     text-align: center;
+     font-weight:600;
+     
+    }
+   .texthere1{
+     color:white;
+     font-family: 'Assistant', sans-serif;
+     font-size:130%;/*else use 150%*/ 
+     padding-top:20%;
+     text-align: justify;
+     
+   }
+   .texthere2{
+     color:white;
+     font-family: 'Assistant', sans-serif;
+     font-size:108%;/*else use 150%*/
+     padding-top:5vw;
+     text-align:justify;
+     padding-left:3vw;
+     
+   }
+   #midtext{
+    float:left;
+    font-family: 'Assistant', sans-serif;
+    color:#3a3735;
+    text-align:left;
+    width:90%;
+    line-height: 200%;
+    padding-top:8%;
+   }
+   #mid1{
+      font-weight:bold;
+      font-size:120%; 
+   }
+   #mid2{
+       font-weight:bolder;
+       font-size:160%;
+   }
+   #toptext{float:left;
+       font-family: 'Assistant', sans-serif;  
+       height:100%;
+       width:90%;
+       font-size:100%;
+       padding-top:4%;
+       text-align:left;
+       line-height: 120%;
+   }
+   #plusarea1{
+       float:left;
+       width:35%;
+       height:100%;
+       cursor: pointer;
+   }
+   #filler1{
+   background-color: #00ccd1;
+       float:left;
+       width:15%;
+       height:100%;
+   }
+   #drawerarea1{
+       float:left;
+       
+       width:40%;
+       height:100%;
+   }
+   
+   #plusarea2{
+       float:right;
+       width:35%;
+       height:100%;
+       cursor: pointer;
+   }
+   #filler2{
+   background-color: #00ccd1;
+       float:right;
+       width:15%;
+       height:100%;
+   }
+   #drawerarea2{
+       float:right;
+       text-align: justify;
+       width:40%;
+       height:100%;
+   }
+   #plusareain1{
+       float:left;
+       background-color: #00ccd1; 
+       height:100%;
+       color: #3a3735;
+       width:100%;
+       font-weight:bolder;
+       text-align: center;
+       display: inline-block;
+       padding-top: 40%;
+       font-size: 5.0vw;
+       line-height:100%;
+       background-image:linear-gradient(
+         to right,
+         white 50%,
+         #00ccd1 50%,
+         #00ccd1 50%,
+         #00ccd1 50%
+       );
+     
+   } 
+   #plusareain2{
+       float:left;
+       background-color: #00ccd1; 
+       height:100%;
+       width:100%;
+       color: #3a3735;
+       font-weight:bolder;
+       text-align: center;
+       display: inline-block;
+       padding-top: 40%;
+       font-size: 5.0vw;
+       line-height:100%;
+       background-image:linear-gradient(
+         to left,
+         white 50%,
+         #00ccd1 50%,
+         #00ccd1 50%,
+         #00ccd1 50%
+       );
+     
+   } 
+   #plusareain1i{
+       float:left;
+       background-color: #00ccd1; 
+       height:100%;
+       width:100%;
+       color: #3a3735;
+       font-weight:bolder;
+       text-align: center;
+       display: inline-block;
+       padding-top: 25%;
+       font-size: 3.7vw;
+       line-height:115%;
+       background-image:linear-gradient(
+         to right,
+         white 50%,
+         #00ccd1 50%,
+         #00ccd1 50%,
+         #00ccd1 50%
+       );
+     
+   }
+   #left_10{/*for 10% space in float left*/
+       float:left;
+       width:5%;
+       height:100%;
+   }
+   #left_10_large{
+       width:0%;
+       float:left;
+       height:100%;
+   }
+   #right_10{/*for 10% space in float right*/
+       float: right;;
+       width:5%;
+       height:100%;
+   }
+   #right_10_large{
+       width:0%;
+       float:right;
+       height:100%;
+   }
+   }
+   /*--------------------------------------------------------------------------*/
+   @media only screen  and (min-width: 800px) and (max-width: 980px)  {/*800 to 980px*/
+   #mybreaksm4{
+         
+         display:none;
+     }
+    #mybreaksm{
+           font-size: 0px;
+       }
+       #mybreaklg{
+          display:none;
+       }
+       #clients{
+        float:left;
+        width:90%;
+    }
+    #clienttext{
+     font-family: 'Assistant', sans-serif;
+     color:#3a3735;
+     font-size:120%;
+     text-align: center;
+     font-weight:600;
+     
+    }
+   .texthere1{
+     color:white;
+     font-family: 'Assistant', sans-serif;
+     font-size:130%;
+     padding-top:18%;
+     text-align: justify;
+     
+   }
+   .texthere2{
+     color:white;
+     font-family: 'Assistant', sans-serif;
+     font-size:120%;
+     padding-top:2vw;
+     text-align:justify;
+     padding-left:13vw;
+     
+   }
+   #midtext{
+    float:left;
+    font-family: 'Assistant', sans-serif;
+    color:#3a3735;
+    text-align:left;
+    width:90%;
+    line-height: 200%;
+    padding-top:8%;
+   }
+   #mid1{
+      font-weight:bold;
+      font-size:120%; 
+   }
+   #mid2{
+       font-weight:bolder;
+       font-size:160%;
+   }
+   
+   #toptext{float:left;
+       font-family: 'Assistant', sans-serif;  
+       height:100%;
+       width:90%;
+       font-size:120%;
+       padding-top:4%;
+       text-align:left;
+       line-height: 120%;
+   }
+  
+   #plusarea1{
+       float:left;
+       width:35%;
+       height:100%;
+       cursor: pointer;
+   }
+   #filler1{
+   background-color: #00ccd1;
+       float:left;
+       width:15%;
+       height:100%;
+   }
+   #drawerarea1{
+       float:left;
+       
+       width:40%;
+       height:100%;
+   }
+   
+   #plusarea2{
+       float:right;
+       width:35%;
+       height:100%;
+       cursor: pointer;
+   }
+   #filler2{
+   background-color: #00ccd1;
+       float:right;
+       width:15%;
+       height:100%;
+   }
+   #drawerarea2{
+       float:right;
+       text-align: justify;
+       width:40%;
+       height:100%;
+   }
+   #plusareain1{
+       float:left;
+       background-color: #00ccd1; 
+       height:100%;
+       color: #3a3735;
+       width:100%;
+       font-weight:bolder;
+       text-align: center;
+       display: inline-block;
+       padding-top: 30%;
+       font-size: 270%;
+       line-height:100%;
+       background-image:linear-gradient(
+         to right,
+         white 50%,
+         #00ccd1 50%,
+         #00ccd1 50%,
+         #00ccd1 50%
+       );
+     
+   } 
+   #plusareain2{
+       float:left;
+       background-color: #00ccd1; 
+       height:100%;
+       width:100%;
+       color: #3a3735;
+       font-weight:bolder;
+       text-align: center;
+       display: inline-block;
+       padding-top: 6vw;
+       font-size: 270%;
+       line-height:100%;
+       background-image:linear-gradient(
+         to left,
+         white 50%,
+         #00ccd1 50%,
+         #00ccd1 50%,
+         #00ccd1 50%
+       );
+     
+   } 
+   #plusareain1i{
+       float:left;
+       background-color: #00ccd1; 
+       height:100%;
+       width:100%;
+       color: #3a3735;
+       font-weight:bolder;
+       text-align: center;
+       display: inline-block;
+       padding-top: 17%;
+       font-size: 210%;
+       line-height:100%;
+       background-image:linear-gradient(
+         to right,
+         white 50%,
+         #00ccd1 50%,
+         #00ccd1 50%,
+         #00ccd1 50%
+       );
+     
+   }
+   #left_10{/*for 10% space in float left*/
+       float:left;
+       width:5%;
+       height:100%;
+   }
+   #left_10_large{
+       width:0%;
+       float:left;
+       height:100%;
+   }
+   #right_10{/*for 10% space in float right*/
+       float: right;;
+       width:5%;
+       height:100%;
+   }
+   #right_10_large{
+       width:0%;
+       float:right;
+       height:100%;
+   }
+   }
+   /*--------------------------------------------------------------------------*/
+   @media only screen and (min-width: 980px) and (max-width: 1150px) {
+   #mybreaksm4{
+         
+         display:none;
+     } 
+   #mybreaksm{
+           font-size: 0px;
+           
+       }
+       #mybreaklg{
+           display:none;
+       }
+       #right_10_large{
+       width:10%;
+       float:right;
+       height:100%;
+   }
+           #left_10{/*for 10% space in float left*/
+       float:left;
+       width:10%;
+       height:100%;
+   }
+   #left_10_large{
+       width:10%;
+       float:left;
+       height:100%;
+   }
+   #clients{
+    float:left;
+    width:80%;
+}
+#clienttext{
+ font-family: 'Assistant', sans-serif;
+ color:#3a3735;
+ font-size:130%;
+ text-align: center;
+ font-weight:600;
+ 
+}
+   .texthere1{
+     color:white;
+     font-family: 'Assistant', sans-serif;
+     font-size:3.2vh;/*else use 150%*/
+     padding-top:17%;
+     text-align: justify;
+     
+   }
+   .texthere2{
+    color: white;
+    font-family: 'Assistant', sans-serif;
+    font-size: 2.9vh;
+    padding-top: 4vw;
+    text-align: justify;
+    padding-left: 8vw;
+     
+   }
+   #midtext{
+    float:left;
+    font-family: 'Assistant', sans-serif;
+    color:#3a3735;
+    text-align:left;
+    width:80%;
+    padding-top:8%;
+   }
+   #mid1{
+      font-weight:bold;
+      font-size:140%; 
+   }
+   #mid2{
+       font-weight:bolder;
+       font-size:180%;
+   }
+   #toptext{float:left;
+       font-family: 'Assistant', sans-serif;
+       height:100%;
+       width:80%;
+       font-size:125%;
+       padding-top:4%;
+       text-align:left;
+       line-height: 120%;
+   }
+   #plusarea1{
+       float:left;
+       width:22%;
+       height:100%;
+       cursor: pointer;
+   }
+   #filler1{
+   background-color: #00ccd1;
+       float:left;
+       width:18%;
+       height:100%;
+   }
+   #drawerarea1{
+       float:left;
+       
+       width:30%;
+       height:100%;
+   }
+   #right_10{/*for 10% space in float right*/
+       float: right;
+       width:10%;
+       height:100%;
+   }
+   #plusarea2{
+       float:right;
+       width:20%;
+       height:100%;
+       cursor: pointer;
+   }
+   #filler2{
+   background-color: #00ccd1;
+       float:right;
+       width:20%;
+       height:100%;
+   }
+   #drawerarea2{
+       float:right;
+       text-align: justify;
+       width:30%;
+       height:100%;
+   }
+   #plusareain1{
+       float:left;
+       background-color: #00ccd1; 
+       height:100%;
+       color: #3a3735;
+       width:100%;
+       text-align: center;
+       display: inline-block;
+       padding-top: 30%;
+       font-size: 240%;
+       font-weight:bolder;
+       line-height:100%;
+       background-image:linear-gradient(
+         to right,
+         white 50%,
+         #00ccd1 50%,
+         #00ccd1 50%,
+         #00ccd1 50%
+       );
+     
+   }
+   #plusareain2{
+       float:left;
+       background-color: #00ccd1; 
+       height:100%;
+       color: #3a3735;
+       width:100%;
+       text-align: center;
+       display: inline-block;
+       font-weight:bolder;
+       padding-top: 33%;
+       font-size: 250%;
+       line-height:100%;
+       background-image:linear-gradient(
+         to left,
+         white 50%,
+         #00ccd1 50%,
+         #00ccd1 50%,
+         #00ccd1 50%
+       );
+     
+   } 
+   #plusareain1i{
+       float:left;
+       background-color: #00ccd1; 
+       height:100%;
+       color: #3a3735;
+       width:100%;
+       text-align: center;
+       display: inline-block;
+       font-weight:bolder;
+       padding-top: 35%;
+       font-size: 185%;
+       line-height:120%;
+       background-image:linear-gradient(
+         to right,
+         white 50%,
+         #00ccd1 50%,
+         #00ccd1 50%,
+         #00ccd1 50%
+       );
+     
+   }  
+   }
+   /*--------------------------------------------------------------------------------------*/
+   @media only screen and (min-width: 1150px) {
+       #mybreaksm4{
+         
+         display:none;
+     }  
+       #mybreaksm{
+         
+           display:none;
+       }
+       #mybreaklg{
+           font-size: 0px;
+       }
+       #clients{
+           float:left;
+           width:80%;
+       }
+       #clienttext{
+        font-family: 'Assistant', sans-serif;
+        color:#3a3735;
+        font-size:140%;
+        text-align: center;
+        font-weight:600;
+        
+       }
+       #right_10_large{
+       width:10%;
+       float:right;
+       height:100%;
+   }
+           #left_10{/*for 10% space in float left*/
+       float:left;
+       width:10%;
+       height:100%;
+   }
+   #left_10_large{
+       width:10%;
+       float:left;
+       height:100%;
+   }
+   .texthere1{
+     color:white;
+     font-family: 'Assistant', sans-serif;
+     font-size:3.2vh;
+     padding-top:17%;
+     text-align: justify;
+     
+   }
+   .texthere2{
+     color:white;
+     font-family: 'Assistant', sans-serif;
+     font-size:3.0vh;
+     padding-top:14%;
+     text-align:justify;
+     padding-left:7.1vw;
+     
+   }
+   #midtext{
+    float:left;
+    font-family: 'Assistant', sans-serif;
+    color:#3a3735;
+    text-align:left;
+    width:80%;
+    padding-top:8%;
+   }
+   #mid1{
+      font-weight:bold;
+      font-size:140%; 
+   }
+   #mid2{
+       font-weight:bolder;
+       font-size:180%;
+   }
+   #toptext{float:left;
+       font-family: 'Assistant', sans-serif; 
+       height:100%;
+       font-size:140%;
+       padding-top:4%;
+       line-height: 120%;
+       text-align:left;
+       width:80%;
+   }
+   #plusarea1{
+       float:left;
+       width:20%;
+       height:100%;
+       cursor: pointer;
+   }
+   #filler1{
+   background-color: #00ccd1;
+       float:left;
+       width:20%;
+       height:100%;
+   }
+   #drawerarea1{
+       float:left;
+       
+       width:30%;
+       height:100%;
+   }
+   #right_10{/*for 10% space in float right*/
+       float: right;
+       width:10%;
+       height:100%;
+   }
+   #plusarea2{
+       float:right;
+       width:20%;
+       height:100%;
+       cursor: pointer;
+   }
+   #filler2{
+   background-color: #00ccd1;
+       float:right;
+       width:20%;
+       height:100%;
+   }
+   #drawerarea2{
+       float:right;
+       text-align: justify;
+       width:30%;
+       height:100%;
+   }
+   #plusareain1{
+       float:left;
+       background-color: #00ccd1; 
+       height:100%;
+       color:#3a3735;
+       width:100%;
+       text-align: center;
+       display: inline-block;
+       padding-top: 30%;
+       font-size: 270%;
+       font-weight:bolder;
+       line-height:100%;
+       background-image:linear-gradient(
+         to right,
+         white 50%,
+         #00ccd1 50%,
+         #00ccd1 50%,
+         #00ccd1 50%
+       );
+     
+   }
+   #plusareain2{
+       float:left;
+       background-color: #00ccd1; 
+       height:100%;
+       color: #3a3735;
+       width:100%;
+       text-align: center;
+       display: inline-block;
+       font-weight:bolder;
+       padding-top: 28%;
+       font-size: 270%;
+       line-height:100%;
+       background-image:linear-gradient(
+         to left,
+         white 50%,
+         #00ccd1 50%,
+         #00ccd1 50%,
+         #00ccd1 50%
+       );
+     
+   } 
+   #plusareain1i{
+       float:left;
+       background-color: #00ccd1; 
+       height:100%;
+       color: #3a3735;
+       width:100%;
+       text-align: center;
+       display: inline-block;
+       font-weight:bolder;
+       padding-top: 25%;
+       font-size: 210%;
+       line-height:100%;
+       background-image:linear-gradient(
+         to right,
+         white 50%,
+         #00ccd1 50%,
+         #00ccd1 50%,
+         #00ccd1 50%
+       );
+     
+   }  
+   }/*media query ends here*/
+   /*-------------------------------------------------------*/
+
+
+                              /* Footer css */
+
+.footer{
+background-color: #3a3735;
+z-index: 99999999999999999999999999999999999999999999999999999;
+}
+
+form
+{
+  width: 100%;
+  padding: 0;
+}
+.query_area
+{
+  background-color: #fcfaac; 
+  color: #302d2c; 
+  font-family: 'ubuntu','sans-serif'; 
+  font-weight: 300;
+  height: 22vh;
+  border:none;
+  
+  outline:none !important;
+    outline-width: 0 !important;
+    box-shadow: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+} 
+
+.email_area
+{
+  color: #302d2c; 
+  font-family: 'ubuntu','sans-serif'; 
+  font-weight: 300;
+  max-height: 6vh;
+  padding: 0;
+  max-width: 95%;
+  border:none;
+
+  outline:none !important;
+    outline-width: 0 !important;
+    box-shadow: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+}
+
+.send_area
+{
+margin-left: 5px;
+margin-right: 4px;
+margin-top: 10px;
+color: black;
+transition: 0.4s;
+font-size: 18px;
+cursor: pointer;
+background: transparent;
+border: none;
+}
+.send_area:hover
+{
+color:#3a3735;
+}
+
+.arrow
+{
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  background-image: url(/assets/images/home.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size:contain;
+  transition: 0.8s;
+  cursor: pointer;
+  border:2px solid white;
+  border-radius: 10px 10px;
+  bottom: 5%;
+  right: 5%;
+  z-index: 99999999999;
+}
+
+@media only screen and (max-width: 906px)
+{
+.arrow
+{
+  height: 80px;
+  width: 80px;
+}
+}
+
+@media only screen and (max-width: 490px)
+{
+.arrow
+{
+  height: 60px;
+  width: 60px;
+}
+}
+
+.ext-rotate
+{
+  /*   -ms-transform: rotate(-8deg); IE 9
+        -webkit-transform: rotate(-2deg); Safari
+        transform: rotate(-6deg);
+        margin-top:6.5%;
+     */    width: 16000px;
+
+     background-image:linear-gradient(to bottom right,#3a3735 50%,white 50%);
+
+}
+.ext-footer{
+overflow: hidden;
+background-color: #ffffff;
+font-family: 'Noto Serif', serif;
+font-size: 18px;
+text-align: center;
+justify-content: center;
+color:#3a3735;
+}
+
+@media only screen and (max-width: 686px)
+{
+.ext-footer{
+overflow: hidden;
+font-size: 14px;
+background-color: #ffffff;
+font-family: 'Noto Serif', serif;
+text-align: center;
+color:#3a3735;
+padding-left: 2%;
+padding-right: 2%;
+} 
+}
+
+@media only screen and (max-width: 400px)
+{
+.ext-footer{
+overflow: hidden;
+font-size: 12px;
+background-color: #ffffff;
+font-family: 'Noto Serif', serif;
+text-align: center;
+color:#3a3735;
+padding-left: 2%;
+padding-right: 2%;
+} 
+}
+
+
+.links_div a
+{
+text-decoration: none;
+color:#e8e1d1;
+}
+
+.about_div ul
+{
+  margin-top: 20px;
+ color:#e8e1d1;
+ font-family: "Mallanna", 'sans-serif';
+ font-size:24px;
+ text-decoration: none;
+ padding: 20px;
+}
+
+.about_div span
+{
+transition: 0.4s;
+cursor: pointer;
+}
+.about_div span:hover
+{
+color: #fc3c1d;
+}
+
+@media only screen and (max-width: 686px)
+{
+.about_div ul
+{
+ margin-top: 40px;
+ font-size:14px;
+ padding: 10px;
+}
+}
+
+.hire_div ul
+{
+  margin-top: 20px;
+ color:#e8e1d1;
+ font-family: "Mallanna", 'sans-serif';
+ font-size:24px;
+ padding: 20px;
+}
+.hire_div span
+{
+transition: 0.4s;
+cursor: pointer;
+}
+.hire_div span:hover
+{
+color: #fc3c1d;
+}
+
+@media only screen and (max-width: 686px)
+{
+.hire_div ul
+{
+ margin-top: 40px;
+ font-size:14px;
+ padding: 10px;
+}
+}
+
+@media only screen and (max-width: 332px)
+{
+.about_div ul
+{
+ margin-top: 40px;
+ font-size:12px;
+ padding: 10px;
+}
+
+.hire_div ul
+{
+ margin-top: 40px;
+ font-size:12px;
+ padding: 10px;
+}
+}
+
+
+.social_div ul
+{
+  margin-top: 20px;
+ color:#e8e1d1;
+ font-family: "Mallanna", 'sans-serif';
+ font-size:24px;
+ padding: 20px;
+}
+
+
+.social_div span
+{
+transition: 0.4s;
+cursor: pointer;
+}
+.social_div span:hover
+{
+color: #fc3c1d;
+}
+
+@media only screen and (max-width: 686px)
+{
+.social_div ul
+{
+ margin-top: 40px;
+ font-size:14px;
+ padding: 10px;
+}
+}
+
+@media only screen and (max-width: 332px)
+{
+.about_div ul
+{
+ margin-top: 40px;
+ font-size:12px;
+ padding: 10px;
+}
+
+.hire_div ul
+{
+ margin-top: 40px;
+ font-size:12px;
+ padding: 10px;
+}
+
+.social_div ul
+{
+ margin-top: 40px;
+ font-size:12px;
+ padding: 10px;
+}
+}

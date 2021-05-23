@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   id="Layer_1"
+   x="0px"
+   y="0px"
+   width="300"
+   height="300"
+   viewBox="0 0 300 300"
+   xml:space="preserve"
+   sodipodi:docname="IT3 we3dx.svg"
+   inkscape:version="0.92.3 (2405546, 2018-03-11)"><metadata
+   id="metadata23"><rdf:RDF><cc:Work
+       rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
+         rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title></dc:title></cc:Work></rdf:RDF></metadata><defs
+   id="defs21" /><sodipodi:namedview
+   pagecolor="#ffffff"
+   bordercolor="#666666"
+   borderopacity="1"
+   objecttolerance="10"
+   gridtolerance="10"
+   guidetolerance="10"
+   inkscape:pageopacity="0"
+   inkscape:pageshadow="2"
+   inkscape:window-width="640"
+   inkscape:window-height="480"
+   id="namedview19"
+   showgrid="false"
+   fit-margin-top="0"
+   fit-margin-left="0"
+   fit-margin-right="0"
+   fit-margin-bottom="0"
+   inkscape:zoom="0.65186406"
+   inkscape:cx="253.36478"
+   inkscape:cy="208.85656"
+   inkscape:window-x="0"
+   inkscape:window-y="0"
+   inkscape:window-maximized="0"
+   inkscape:current-layer="Layer_1" />
+<path
+   stroke-miterlimit="10"
+   d="m 290.84062,192.71976 c 0,11.003 -4.809,21.099 -16.571,21.099 H 40.944622 c -11.761,0 -24.104,-10.096 -24.104,-21.099 V 69.341757 c 0,-11.005 12.344,-16.523 24.104,-16.523 H 274.26862 c 11.764,0 16.571,5.519 16.571,16.523 z"
+   id="path2"
+   inkscape:connector-curvature="0"
+   style="fill:none;stroke:#565656;stroke-width:3;stroke-miterlimit:10" />
+<polyline
+   stroke-miterlimit="10"
+   points="441.5,616 441.5,649.5 402.5,649.5   402.5,664.5 444,664.5 "
+   id="polyline4"
+   style="fill:none;stroke:#565656;stroke-width:3;stroke-miterlimit:10"
+   transform="translate(-293.65938,-396.68124)" />
+<polyline
+   stroke-miterlimit="10"
+   points="456.5,616 456.5,649.5 491.5,649.5   491.5,664.5 461,664.5 "
+   id="polyline6"
+   style="fill:none;stroke:#565656;stroke-width:3;stroke-miterlimit:10"
+   transform="translate(-293.65938,-396.68124)" />
+<line
+   stroke-miterlimit="10"
+   x1="35.340622"
+   y1="186.81876"
+   x2="280.34061"
+   y2="186.81876"
+   id="line8"
+   style="fill:none;stroke:#565656;stroke-miterlimit:10" />
+<ellipse
+   stroke-miterlimit="10"
+   cx="155.09962"
+   cy="199.78177"
+   rx="7.921"
+   ry="7.9790001"
+   id="ellipse10"
+   style="fill:none;stroke:#565656;stroke-width:2.5862999;stroke-miterlimit:10" />
+<polyline
+   stroke-miterlimit="10"
+   points="432.216,551.296 384.476,528.366   432.216,490.956 "
+   id="polyline12"
+   style="fill:none;stroke:#d16d00;stroke-width:5.45440006;stroke-miterlimit:10"
+   transform="translate(-293.65938,-396.68124)" />
+<polyline
+   stroke-miterlimit="10"
+   points="467.073,551.296 514.814,528.366   467.073,490.956 "
+   id="polyline14"
+   style="fill:none;stroke:#d16d00;stroke-width:5.45440006;stroke-miterlimit:10"
+   transform="translate(-293.65938,-396.68124)" />
+<line
+   stroke-miterlimit="10"
+   x1="164.62361"
+   y1="78.583763"
+   x2="147.04964"
+   y2="172.71475"
+   id="line16"
+   style="fill:none;stroke:#d16d00;stroke-width:5.45440006;stroke-miterlimit:10" />
+</svg>

@@ -1,0 +1,94 @@
+<div class="row  no-gutters"  id="main" >
+        <div class="col-md-9">
+             <div class="row " id="contactform">
+                    
+                             <form [formGroup]="formdata" (ngSubmit) = "submit_contact(formdata.value)" style="width: -webkit-fill-available;">
+
+
+                            <div class="form-row">
+                              <div class="form-group col-md-6">
+                                <input type="text" formControlName="name" class="form-control " id="name" placeholder="Name">
+                              </div>
+                              <div class="form-group col-md-6">
+                                <input type="email" class="form-control" formControlName="email" id="email" placeholder="Email">
+                              </div>
+                            </div>
+                            <div class="form-row">
+                                    <div class="form-group col-md-6">
+                                      <input type="text" class="form-control" formControlName="contact" id="contact" placeholder="Contact">      
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                            <input type="text" formControlName="subject" class="form-control " id="subject" placeholder="Subject">
+                                          </div>
+                            </div>
+                            <div class="form-row">
+                                    <div class="form-group col-md-6">
+                                            <textarea type="textarea" formControlName="text" class="form-control " id="query" placeholder="Enter Your Text Here" style="line-height: 1rem;"></textarea>
+                                    </div>
+                                    <div class="form-group col-md-6" style="min-height:15px; ">
+                                            CAPTCHA
+                                        </div>
+                           
+                        </div>
+                            <div class="form-row">
+                                    
+                                    <div class="form-group col-md-6" style="text-align: center;">
+                                           
+                                             <section class="link" style="height: 50px; margin-top: -15px;"><nav class="link-effect-12" id="link-effect-12">
+                                            <a> <span>
+                                            <button type="submit" class="btn" id="buttonhere" ><b>Inspire Me!</b></button>
+                                        </span></a></nav></section> 
+                                     </div>
+                            </div>
+                            
+                             </form>
+
+             </div>
+                    
+    
+                         <div class="row  " id="logo">
+                                <div class="col-md-6" id="nozzberry" style= "min-height:20%;">
+                                  <b> Nozzberry </b>
+                                  <img src="/assets/images/nozzberry.svg" alt="" style="width:15%;height:80%;">
+                                </div>
+                                <div class="col-md-6" style= "min-height:20%;">
+                                  <b>Popcode</b><br>
+                                  Coming Soon......
+                                </div>
+                             </div>
+                             <div class="row" id="map">
+                              <img src="/assets/images/map.PNG" alt="" style="width:100%;height:44vh;">
+                             </div>
+    
+    
+        </div>
+        <div class="col-md-3">
+                <div class="row" id="textbox1">
+                        202-203, Mahasagar<br> Corporate, <br>10/4 GB Main Road,<br>
+                        Geeta Bhawan Square, Manoramaganj,<br>
+                        Indore, Madhya Pradesh, India – 452001<br>
+                    </div>
+                    <div class="row" id="textbox2">
+                        WoodFlake Business Development Cell<br>
+                        5536 Turnberry Ln, Cleveland Heights,<br>
+                        Ohio, United States - 44143<br>
+                    </div>
+                    <div class="row" id="social">
+                    <div class="row" style="height:fit-content;"> <span> We’re a pretty restless bunch_ Follow us for all the gossip_</span><br></div>
+                    <div class="row"  id="sociallinks">
+                          <ul style="list-style-type: none;">
+                      <li>  <a href="https://www.facebook.com/"><span id="socialtext">FACEBOOK </span></a> </li>
+                      <li>  <a href="https://twitter.com/?lang=en"><span id="socialtext">TWITTER</span> </a></li>
+                      <li>  <a href="https://www.instagram.com/"><span id="socialtext">INSTAGRAM</span> </a> </li>
+                          </ul>
+                          <ul style="list-style-type: none;">
+                      <li> <a routerLink="/"> <img src="/assets/images/home.svg" alt="" style="width:50%;"></a> </li>
+                          </ul>
+                        
+                    </div>
+                     
+                   
+                       
+                    </div>
+        </div>
+     </div>

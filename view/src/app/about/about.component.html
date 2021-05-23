@@ -1,0 +1,215 @@
+												<!-- why row starts -->
+<div class="row why_row fullwidth justify-content-md-center flex-nowrap no-gutters" id="top">
+<div class="col-11">
+
+<div class="row why_bg_row fullwidth no-gutters">
+
+	<div class="row fullwidth whymini_row" >
+		<p class="whyminimal_p">minimal</p>
+		
+	</div>
+
+	<div class="row fullwidth whybg_row">
+
+		<p class="whybg_p">WHY</p>
+	</div>
+</div>
+
+<div class="row whytext_row fullwidth no-gutters">
+	<div class="col-12 whytext_col">		
+	<p class="whytext_p">
+		At We3Dx, we build and architect wonders. From <span>designing user experiences</span> to enhancing digital programs, we use <span>visual interaction and graphical inputs</span> to tell stories. Our approach is driven by your valuable narratives, understanding your <span>business, brand positioning</span> and creative market trends. 
+		 <b>
+		We truly aspire for minimal and simplified representations.
+		</b>
+	</p>
+	</div>
+</div>
+
+</div>
+
+<div class="col-1">
+
+<div class="row num-row no-gutters">
+
+<div class="col num-col">
+  <div class="row no-gutters">
+    <div class="numerals one">
+      <span><a routerLink="">01</a></span>
+    </div>
+  </div>
+
+    <div class="row no-gutters">
+    <div class="numerals">
+    
+    <div class="num two">
+      <span><a routerLink="">02</a></span>
+    </div>
+    
+    </div>
+  </div>
+
+    <div class="row no-gutters">
+    <div class="numerals three">
+      <span><a routerLink="">03</a></span>
+    </div>
+  </div>
+
+</div>
+</div>
+
+</div>
+
+</div>											<!-- Why row ended -->
+
+
+
+												<!-- What row starts -->
+<div class="row what_row fullwidth justify-content-md-center flex-nowrap no-gutters">
+<div class="col">
+
+<div class="row whattext_row fullwidth no-gutters">
+	<div class="col-12 whattext_col">		
+	<p class="whattext_p">
+		We3Dx is innovating experiences and constantly <span>evolve with newer technologies
+</span>. Constructing resourceful models with sensitive viewpoint, we know it never goes wrong. And ofcourse! <b>When we talk about economy, we value your time the most.</b>
+	</p>
+	</div>
+</div>
+
+<div class="row what_bg_row fullwidth no-gutters">
+
+	<div class="row fullwidth whateco_row" >
+		<p class="whateco_p">economy-viable</p>
+		
+	</div>
+
+	<div class="row fullwidth whatbg_row">
+
+		<p class="whatbg_p">WHAT is</p>
+	</div>
+</div>
+
+
+
+</div>
+</div>											<!-- What row ended -->
+
+
+
+												<!-- how row starts -->
+<div class="row how_row fullwidth justify-content-md-center flex-nowrap no-gutters">
+<div class="col">
+
+<div class="row how_bg_row fullwidth no-gutters">
+	<div class="row fullwidth howbg_row">
+		<p class="howbg_p">HOW</p>
+	</div>
+</div>
+
+<div class="row howtext_row fullwidth no-gutters">
+
+	<div class="col-12 howtext_col">		
+	<p class="howtext_p">
+	<span>Our fine yet humble</span> folk sit at recycled timber desks, work on laptops powered by rechargeable batteries and never misuse electricity in and around studio. They breathe fresh air created by trees around/plants grown in-house and let the windows open for sunlight; allowing AC/Coolers to RIP. We avoid glass cabins at our best. These ‘Digitoons’ hold meetings within a cave of recycled paper laced walls; <span>reusing paper to its last shred (we still don’t know what a paper shredder is! </span>). Though white board scribbles are more appreciated these days. <span>We said no to plastic in pantry and on desk to maximum most</span>. When it’s time to leave, the team grab their bags, switch upcycled electricity extension boards off and they flick the switch to shut the LED’s powered panels. <b>Back to home; they walk, ride and catch public transport. That’s the commitment!</b>
+	</p>
+	</div>
+</div>
+
+<!-- 	<div class="row fullwidth howecofriendly_row no-gutters" >
+	<div class="col-12 howecofriendly_col">
+		<p class="howecofriendly_p">eco-friendly</p>	
+		</div>
+	</div> -->
+ 
+
+<div class="row what_bg_row fullwidth no-gutters">
+
+	<div class="row fullwidth howeco_row" >
+		<p class="howeco_p">eco-freindly</p>
+		
+	</div>
+ </div>
+
+</div>
+</div>											<!-- how row ended -->
+
+
+
+                                                  <!-- Footer starts -->
+<div class="row footer no-gutters" style="position: relative; height: 96vh; overflow: hidden;">
+
+  <div class="row fullwidth no-gutters" style="height: 30%; background-color: white;">
+
+<form [formGroup]="formdata" (ngSubmit) = "submit_query(formdata.value)">
+
+    <div class="col-12 no-gutters" style="padding: 0;">
+       <div class="input-group">
+        <textarea name="query" formControlName="query" class="form-control query_area fullwidth" required="required" placeholder="Enter your query" aria-label="Query"></textarea>
+     </div>
+    </div>
+
+    <div class="col-12 no-gutters">
+      <div class="input-group">
+          <input type="email" name="email" formControlName="email" required="required" class="form-control email_area fullwidth" placeholder="email@example.com" aria-label="Email" aria-describedby="basic-addon1">
+
+          <button align="center" type="submit" class="send_area">> Send </button>
+      </div>
+    </div>  
+
+</form>
+  </div>
+
+
+  <div class="row fullwidth no-gutters links_div" style="height: 40%; overflow: hidden;">
+
+    <div class="col-3 about_div fullheight fullwidth">
+    <ul>
+      <ol><a routerLink="/about"><span>About us</span></a></ol>
+      <ol><a routerLink="/it"><span>IT</span></a></ol>
+      <ol><a routerLink="/3dprinting"><span>3D Printing</span></a></ol>
+      <ol><a routerLink="/branding"><span>Graphics</span></a></ol>
+    </ul>
+    </div>
+
+    <div class="col-3 hire_div fullheight fullwidth">
+      <ul>
+      <ol><a routerLink="/blogs"><span>Blog</span></a></ol>
+       <ol><a routerLink="/hireus"><span>Hire us</span></a></ol>
+      <ol><a routerLink="/hireme"><span>Hire me</span></a></ol>
+      <ol><a routerLink="/contactus"><span>Contact</span></a></ol>
+    </ul>
+    </div>
+
+
+    <div class="col-3 social_div fullheight fullwidth">
+    <ul>
+      <ol><a href="https://www.facebook.com/" target="_blank"><span class="social_icon">Facebook</span></a></ol>
+      <ol><a href="https://www.twitter.com/" target="_blank"><span class="social_icon">Twitter</span></a></ol>
+      <ol><a href="https://www.instagram.com/" target="_blank"><span class="social_icon">Instagram</span></a></ol>
+      <ol><a href="https://www.linkedin.com/" target="_blank"><span class="social_icon">LinkedIn</span></a></ol>
+    </ul>
+    </div>
+
+    <div class="col-3  fullheight fullwidth">
+    </div>
+
+  </div>
+
+  <div class="row ext-rotate" style="height: 30%;">
+  </div> 
+
+
+<a routerLink="/">
+<div class="arrow">  
+</div>
+</a>
+
+</div>                                            <!-- Footer ended -->
+
+
+                                                  <!-- Extream Footer starts -->
+<div class="row ext-footer fullwidth justify-content-md-center">
+  <span>© Copyright 2015-2019 WoodFlake Business Solutions and Retail Pvt. Ltd.</span>
+</div>                                            <!-- Extram Footer ended -->
+

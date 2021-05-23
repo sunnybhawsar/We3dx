@@ -1,0 +1,558 @@
+<!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" >We3DX Admin</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" ><span class="sr-only">(current)</span></a>
+      </li>
+    </ul>
+
+    <ul class="navbar-nav">
+      <li>
+        <a class="nav-link" href="/">Log Out</a>
+      </li>
+    </ul>
+    
+  </div>
+</nav>
+
+<div class="row">
+  <div class="col-sm-2 side_bar">
+    <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+
+      <a class="nav-link active" id="v-pills-blogs-tab" data-toggle="pill" href="#v-pills-blogs" role="tab" aria-controls="v-pills-blogs" aria-selected="false">Blogs</a>
+      <a class="nav-link" id="v-pills-clients-tab" data-toggle="pill" href="#v-pills-clients" role="tab" aria-controls="v-pills-clients" aria-selected="false">Clients</a>
+      <a class="nav-link" id="v-pills-hirings-tab" data-toggle="pill" href="#v-pills-hirings" role="tab" aria-controls="v-pills-hirings" aria-selected="false">Hirings</a>
+      <a class="nav-link" id="v-pills-position-tab" data-toggle="pill" href="#v-pills-positions" role="tab" aria-controls="v-pills-positions" aria-selected="false">Positions</a>
+      <a class="nav-link" id="v-pills-queries-tab" data-toggle="pill" href="#v-pills-queries" role="tab" aria-controls="v-pills-queries" aria-selected="false">Queries</a>
+      <a class="nav-link" id="v-pills-contacts-tab" data-toggle="pill" href="#v-pills-contacts" role="tab" aria-controls="v-pills-contacts" aria-selected="false">Contacts</a>
+    </div>
+  </div>
+  <div class="col-sm-10 main_bar">
+    <div class="tab-content" id="v-pills-tabContent">
+
+      <div class="tab-pane fade show active" id="v-pills-blogs" role="tabpanel" aria-labelledby="v-pills-blogs-tab">
+        <!-- Blogs Starts -->
+        <div style="padding: 5px;">
+          <a class="btn btn-primary" routerLink = "/newblog">
+            Add Blog
+          </a>
+        </div>
+        <div class="table-responsive-md">
+          <table class="table">
+            <tr>
+              <th>#</th>
+              <th>Blog Title</th>
+              <th>Overview</th>
+              <th>Date</th>
+              <th>Action</th>
+            </tr>
+
+            <tr *ngFor="let blog of blogs">
+              <td>{{blog.id}}</td>
+              <td>{{blog.title}}</td>
+              <td style="width: 40%">{{blog.overview}}</td>
+              <td>{{blog.createdAt}}</td>
+              <td>
+                <a class="btn btn-primary" routerLink = "/blogs/{{blog.id}}/edit">
+                  Edit
+                </a>
+                &nbsp;
+                <button type="button" (click)="deleteBlog(blog.id)" class="btn btn-danger">Delete</button>
+              </td>
+            </tr>
+          </table>
+        </div>
+
+        <!-- Blogs Ends -->
+      </div>
+      <div class="tab-pane fade" id="v-pills-clients" role="tabpanel" aria-labelledby="v-pills-clients-tab">
+        <!-- Clients Starts -->
+
+        <div class="table-responsive-md">
+          <table class="table">
+            <tr>
+              <th>#</th>
+              <th>Location</th>
+              <th>Date</th>
+              <th>Action</th>
+
+
+       <tr *ngFor="let request of Response">
+          <td>{{request.id}}</td>
+          <td>{{request.address}}</td>
+          <td>{{request.createdAt}}</td>
+          <td>
+          <!-- <button type="button" class="btn btn-primary" (click)="fetchrequest(request.id)" data-toggle="modal" data-target="#exampleModalCenter"> -->
+            
+<button type="button" class="btn btn-primary" (click)="fetchrequest(request.id)" data-toggle="modal" data-target="#exampleModalLong">
+  
+            View
+          </button>
+            &nbsp;
+          <button type="button" (click)="deleterequest(request.id)" class="btn btn-danger">Delete</button>
+          </td>
+      </tr>
+
+          </table>
+
+          <!-- Button trigger modal -->
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title" id="exampleModalLongTitle">Details</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+          
+        <div class="contt" style="">
+
+         <p>
+ <b> Project description : </b>
+  {{Data.project_description}}
+         </p>
+ 
+         <p>
+ <b> Location : </b>
+ {{Data.address}}
+         </p>
+ 
+         <p>
+ <b> Source of info : </b>
+ {{Data.sourceofinfo}}
+         </p>
+ 
+         <p>
+ <b> Source of contact : </b>
+ {{Data.contactinfo}}
+         </p>  
+ 
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal 
+
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title" id="exampleModalCenterTitle">Details</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+
+        <p>
+         <b> Project description : </b>
+          {{Data.project_description}}
+        </p>
+
+        <p>
+         <b> Location : </b>
+         {{Data.address}}
+        </p>
+
+        <p>
+         <b> Source of info : </b>
+         {{Data.sourceofinfo}}
+        </p>
+
+        <p>
+         <b> Source of contact : </b>
+         {{Data.contactinfo}}
+        </p>                        
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">
+        Close
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+-->
+        </div>
+
+        <!-- Clients Ends -->
+      </div>
+      <div class="tab-pane fade" id="v-pills-hirings" role="tabpanel" aria-labelledby="v-pills-hirings-tab">
+        <!-- Hirings Starts -->
+
+        <div class="table-responsive-md">
+          <table class="table">
+            <tr>
+              <th>#</th>
+              <th>Position</th>
+              <th>Name</th>
+              <th>Experience</th>
+              <th>Action</th>
+            </tr>
+
+            <tr *ngFor="let application of applications">
+              <td>{{application.id}}</td>
+              <td>{{application.position}}</td>
+              <td>{{application.name}}</td>
+              <td>{{application.experience}}</td>
+              <td>
+                
+              <button type="button" class="btn btn-primary" (click)="fetchApplication(applications.indexOf(application))" data-toggle="modal" data-target="#viewApplicationModalLong">      
+                View
+              </button>
+                &nbsp;
+              <button type="button" (click)="deleteApplication(application.id)" class="btn btn-danger">Delete</button>
+              </td>
+          </tr>
+          </table>
+        </div>
+
+
+        <!-- Hirings Ends -->
+      </div>
+
+      <!-- Modal -->
+      <div class="modal fade" id="viewApplicationModalLong" tabindex="-1" role="dialog" aria-labelledby="viewApplicationtionModalLongTitle" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title" id="viewApplicationModalLongTitle">Details</h4>
+              <button  type="button" class="close" data-dismiss="modal" aria-label="Close" >
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                
+              <div class="contt" style="">
+
+              <p>
+               <b> Name : </b>
+                {{applicationData.name}}
+              </p>
+               
+              <p>
+               <b> Email : </b>
+               {{applicationData.email}}
+              </p>
+               
+              <p>
+               <b> Contact no : </b>
+               {{applicationData.contact}}
+              </p>
+               
+              <p>
+               <b> Position : </b>
+               {{applicationData.position}}
+              </p>  
+
+              <p>
+               <b> Experience : </b>
+               {{applicationData.experience}}
+              </p>
+
+              <p>
+               <b> Resume : </b>
+               <a href="/assets/uploads/{{applicationData.resumeUrl}}">{{applicationData.resumeUrl}}</a>
+
+              </p> 
+
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="tab-pane fade" id="v-pills-positions" role="tabpanel" aria-labelledby="v-pills-positions-tab">
+        <!-- Positions Starts -->
+
+        <button type = "button" #openmodal id="modal-open" data-toggle="modal" data-target="#AddPositionModalLong" style="display: none;">
+        </button>
+            
+          <button type="button" class="btn btn-primary" (click)="createForm()" style="margin: 5px;">
+            Add New
+          </button>
+
+          <!-- Modal -->
+        <div class="modal fade" id="AddPositionModalLong" tabindex="-1" role="dialog" aria-labelledby="AddPositionModalLongTitle" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h4 class="modal-title" id="AddPositionModalLongTitle">Add New Position</h4>
+                <button type="button" #divClick class="close" data-dismiss="modal" aria-label="Close" id="modal-close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                  
+                <div class="contt" style="">
+
+                  <form [formGroup]="formdata9" (ngSubmit) = "submit_position(formdata9.value)">
+
+                  <div class="form-group">
+                    <input type="text" class="form-control" formControlName="position" id="position"  placeholder="Enter Position">
+                  </div>
+
+                  <div class="form-group">
+                    <textarea class="form-control" id="details" formControlName="details" placeholder="Enter Details" rows="6"></textarea>
+                  
+                  </div>
+
+                  <button type="submit" class="btn btn-primary">Submit</button>
+
+                </form>
+
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+          
+          
+        <div class="table-responsive-md" style="margin-top: 15px;">
+          <table class="table">
+            <tr>
+              <th>#</th>
+              <th>Positions</th>
+              <th>Date</th>
+              <th>Action</th>
+            </tr>
+
+       <tr *ngFor="let pos of Position_res">
+          <td>{{pos.id}}</td>
+          <td>{{pos.position}}</td>
+          <td>{{pos.createdAt}}</td>
+          <td>
+            
+          <button type="button" class="btn btn-primary" (click)="fetchposition(pos.id)" data-toggle="modal" data-target="#viewpositionModalLong">      
+            View
+          </button>
+            &nbsp;
+          <button type="button" (click)="deleteposition(pos.id)" class="btn btn-danger">Delete</button>
+          </td>
+      </tr>
+
+
+          </table>
+        </div>
+
+
+<!-- Modal -->
+<div class="modal fade" id="viewpositionModalLong" tabindex="-1" role="dialog" aria-labelledby="viewpositionModalLongTitle" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title" id="viewpositionModalLongTitle">Details</h4>
+        <button  type="button" class="close" data-dismiss="modal" aria-label="Close" >
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+          
+        <div class="contt" style="">
+
+        <p>
+          {{Position_data.details}}
+        </p> 
+
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+        <!-- Positions Ends -->
+      </div>
+
+
+      <div class="tab-pane fade" id="v-pills-queries" role="tabpanel" aria-labelledby="v-pills-queries-tab">
+        <!-- Queries Starts -->
+
+        <div class="table-responsive-md">
+        
+
+          <table class="table">
+            <tr>
+              <th>#</th>
+              <th>Email</th>
+              <th>Date</th>
+              <th>Action</th>
+            </tr>
+
+       <tr *ngFor="let query of Query_res">
+          <td>{{query.id}}</td>
+          <td>{{query.email}}</td>
+          <td>{{query.createdAt}}</td>
+          <td>
+          <!-- <button type="button" class="btn btn-primary" (click)="fetchrequest(request.id)" data-toggle="modal" data-target="#exampleModalCenter"> -->
+            
+<button type="button" class="btn btn-primary" (click)="fetchquery(query.id)" data-toggle="modal" data-target="#queryModalLong">
+  
+            View
+          </button>
+            &nbsp;
+          <button type="button" (click)="deletequery(query.id)" class="btn btn-danger">Delete</button>
+          </td>
+      </tr>
+
+          </table>
+
+          <!-- Button trigger modal -->
+
+
+<!-- Modal -->
+<div class="modal fade" id="queryModalLong" tabindex="-1" role="dialog" aria-labelledby="queryModalLongTitle" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title" id="queryModalLongTitle">Query</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+          
+        <div class="contt" style="">
+
+        <p>
+          <!--  {{Query_data.query}} -->
+          {{Query_data.query}}
+        </p> 
+
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+        </div>
+
+        <!-- Queries Ends -->
+      </div>
+      
+      <div class="tab-pane fade" id="v-pills-contacts" role="tabpanel" aria-labelledby="v-pills-contacts-tab">
+        <!-- Contacts Starts -->
+
+        <div class="table-responsive-md">
+          <table class="table">
+            <tr>
+              <th>#</th>
+              <th>Name</th>
+              <th>Date</th>
+              <th>Action</th>
+            </tr>
+
+        <tr *ngFor="let contact of Contact_res">
+          <td>{{contact.id}}</td>
+          <td>{{contact.name}}</td>
+          <td>{{contact.createdAt}}</td>
+          <td>
+          <!-- <button type="button" class="btn btn-primary" (click)="fetchrequest(request.id)" data-toggle="modal" data-target="#exampleModalCenter"> -->
+            
+<button type="button" class="btn btn-primary" (click)="fetchcontact(contact.id)" data-toggle="modal" data-target="#contactModalLong">
+  
+            View
+          </button>
+            &nbsp;
+          <button type="button" (click)="deletecontact(contact.id)" class="btn btn-danger">Delete</button>
+          </td>
+      </tr>
+
+          </table>
+
+
+<!-- Modal -->
+<div class="modal fade" id="contactModalLong" tabindex="-1" role="dialog" aria-labelledby="conatctModalLongTitle" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title" id="conatactModalLongTitle">Details</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+          
+        <div class="contt" style="">
+
+         <p>
+ <b> Name : </b>
+  {{Contact_data.name}}
+         </p>
+ 
+         <p>
+ <b> Email : </b>
+ {{Contact_data.email}}
+         </p>
+ 
+         <p>
+ <b> Contact no : </b>
+ {{Contact_data.contact}}
+         </p>
+ 
+         <p>
+ <b> Subject : </b>
+ {{Contact_data.subject}}
+         </p>  
+
+          <p>
+ <b> Query : </b>
+ {{Contact_data.text}}
+         </p>
+
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+        </div>
+
+        <!-- Contacts Ends -->
+      </div>
+ 
+
+
+    </div>
+  </div>
+</div>

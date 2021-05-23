@@ -1,0 +1,1 @@
+fullpage_api.destroy('all');

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="39.952084mm"
+   height="24.854225mm"
+   viewBox="0 0 39.952084 24.854225"
+   version="1.1"
+   id="svg8"
+   inkscape:version="0.92.3 (unknown)"
+   sodipodi:docname="arrow3.svg">
+  <defs
+     id="defs2" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.35"
+     inkscape:cx="-345.92857"
+     inkscape:cy="-73.031385"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="-2.6"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:window-width="1305"
+     inkscape:window-height="744"
+     inkscape:window-x="61"
+     inkscape:window-y="24"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-83.589435,-104.65622)">
+    <g
+       id="layer1-3"
+       inkscape:label="Layer 1"
+       transform="translate(-6.8035715,5.291667)">
+      <g
+         style="fill:#ffffff;fill-opacity:1;stroke:#ff4500;stroke-opacity:0.94117647"
+         id="g6"
+         transform="matrix(0.26458333,0,0,0.26458333,39.328424,-24.212469)">
+        <polyline
+           stroke-miterlimit="10"
+           points="269.647,467.5 193.5,509.741 193.5,560.5 270,560.5  "
+           id="polyline2"
+           style="fill:#ffffff;fill-opacity:1;stroke:#ff4500;stroke-miterlimit:10;stroke-opacity:0.94117647" />
+        <polyline
+           stroke-miterlimit="10"
+           points="268.353,467.5 343.5,509.741 343.5,560.5 269,560.5  "
+           id="polyline4"
+           style="fill:#ffffff;fill-opacity:1;stroke:#ff4500;stroke-miterlimit:10;stroke-opacity:0.94117647" />
+      </g>
+    </g>
+  </g>
+</svg>

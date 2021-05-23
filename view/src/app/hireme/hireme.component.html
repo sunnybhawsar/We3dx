@@ -1,0 +1,116 @@
+<div class="container-fluid no-gutters fullheight">
+  <div class="row no-gutters">
+      <div class="col">
+        <div class="row no-gutters">
+            
+            <div class="col">
+              <div class="row no-gutters " >
+                  <div class="col-2 col-md-2 col-sm-12 logo-col">
+                      <div class="row no-gutters">
+                          <img src="/assets/images/we3dx logo FINAL.svg" alt="" style="max-width: 100%;max-height:200px; ">
+                      </div>
+        
+                    </div> 
+                <div class="col-md-10 col-sm-12 career-head">
+                  <div style="display:block;width:100%;" class="career-head-text ">
+                      <p class="no-gutters">We value skills and don't judge you on how you look on paper. A formal degree in Tech Science/Computers's or any relevant field is a plus, but skills are gold.
+                        We provide the right candidate,best business opportunites and most flexible work environment.<br>Being a part of this upscale and diverse company, we look for our team members , who can communicate/operate at all levels, connect to the details, participate in regular audits.
+                        who don't cease their imagination and are limitless.</p>
+                  </div>
+                    <img class="element" src="/assets/images/career graphics.svg" >
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col social-links">
+
+                    <p>You can stay connected through our pages for faster updates<br> on new openings, insights, gallery, gossips! </p>
+                    <p><a href="">LINKEDIN</a> |
+                    <a href="">GLASSDOR</a> |
+                    <a href="">INDEED</a> |
+                    <a href="">FACEBOOK</a> |
+                    <a href="">INSTAGRAM</a> |
+                    <a href="">TWITTER</a>  
+                    
+                </div>
+              </div>
+              
+
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-7 col-md-12 col-sm-12 "  style="overflow-x: hidden">
+              <div class="row">
+                  <div class="col job-lists">
+                      <div class="accordion" id="accordionExample">
+                          <div class="card" *ngFor="let item of items">
+                            <div class="card-header" [id]="'heading'+item.id" >
+                              
+                              <h5 class="mb-0" >
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" attr.data-target="#{{item.id}}" aria-expanded="false" attr.aria-controls="{{item.id}">
+                                   + {{item.position}}
+                                </button>
+                              </h5>
+                            </div>
+                            <div [id]="item.id" class="collapse" attr.aria-labelledby="{{item.id}}" data-parent="#accordionExample">
+                              <div class="card-body">
+                                {{item.details}}
+                                <div class="job-apply"><button class="job-apply-btn" (click)="displayform(item)">Apply</button></div>
+                              </div>
+                            </div>
+                          </div>
+                          
+                        </div>
+                  </div>
+              </div>    
+                
+            </div>
+            <div class="col-lg-5 col-md-12 col-sm-12" style="overflow-x: hidden">
+                <form [formGroup]="formdata" (ngSubmit)="onSubmit(formdata.value)">
+                  <div class="row">
+                    <div [ngClass]="{'newclass':formactive===true,'col':true, 'job-app-form':true}" >
+                      <div class="job-form-head"><h3>{{activeposition}}</h3></div>
+                        <div class="col"><label for="name">Name</label></div>
+                        <div class="col"><input type="text" name="fusername"  id="name" formControlName="fusername" required a
+utocomplete></div> 
+                    <div class="col"><label for="contact">Contact no</label></div>
+                    <div class="col"><input type="text" id="contact" name="fcontact" formControlName="fcontact" required autocomplete></div>  
+                    <div class="col"><label for="emailid">Email</label></div>
+                    <div class="col"><input type="email" id="emailid" name="femail" formControlName="femail" required autocomplete></div>
+                    <div class="col"><label for="experience">Experience</label></div>
+                    <div class="col"><select name="fexp" id="experience" formControlName="fexp" required autocomplete>
+                      <option value="0">Fresher</option>
+                      <option value="1">0-1 year</option>
+                      <option value="1-2">1-2 years</option>
+                      <option value="2-5">2-5 years</option>
+                      <option value="5-10">5-10 years</option>
+                    </select></div> 
+                    <div class="col"><label for="position">Position</label></div>
+                    <div class="col"><select name="fposition" id="position" formControlName="fposition" required autocomplete>
+                      <option value="{{item.position}}" *ngFor="let item of items" [selected]="selectedOption(item)">{{item.position}}</option>
+                    </select></div>
+                    
+                    <div class="col"><label for="resume">Resume</label></div>
+                    <div class="col"><input type="file" id="resume" name="fresume" (change)="onFileSelected($event)" formControlName="fresume" required autocomplete></div>
+                    <div class="col"><input type="text" [(ngModel)]="fresumeUrl" name="fresumeUrl" formControlName="fresumeUrl" required autocomplete hidden="true"></div>
+                    <div class="col"><button type="submit" class=" o-heading form-submit-btn" >SEND</button></div>
+                    </div>
+                  </div>
+                  </form>
+            </div>
+          </div>
+        <div>
+
+        </div>
+        <div>
+
+        </div>
+        <div class="row no-gutters hireme-footer">
+            <p>DISCLAIMER: Candidates applying to WoodFlake are strongly advised to ascertain the credentials of any third party individuals,agents or organisations. WoodFlake  or it's representatives do not charge or accept any money from job-seekers during the entire recruitment process. If any individual, agent or organization demands money from candidates for recruitment into WoodFlake, please immediately be warned that such a demand might be fraudulent. WoodFlake accepts no liability towards any lossess created by such fraudlent transactions. </p>
+        </div>
+      </div>
+  </div>
+  
+    
+</div>

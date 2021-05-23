@@ -1,0 +1,19 @@
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: #fff;
+    background-color: #fc3c1d;
+    border-radius: 0;
+}
+
+.side_bar
+{
+	background-color: #f8f9fa;
+    min-height: 90vh;
+}
+
+@media only screen and (max-width: 580px) {
+  .side_bar
+  {
+    background-color: #f8f9fa;
+    min-height: 0;
+  }
+}

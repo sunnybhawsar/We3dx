@@ -1,12 +1,12 @@
 {
-  "name": "wooscape",
+  "name": "we3dx",
   "version": "1.0.0",
-  "description": "Backend for WooScape",
+  "description": "Backend for We3dx",
   "main": "app.js",
   "scripts": {
     "start": "nodemon src/app.js --exec"
   },
-  "author": "Woodflake",
+  "author": "Sunny Bhawsar",
   "license": "ISC",
   "dependencies": {
     "bcrypt-nodejs": "0.0.3",
@@ -14,15 +14,15 @@
     "body-parser": "^1.18.3",
     "cors": "^2.8.4",
     "express": "^4.16.3",
-    "html-to-text": "^4.0.0",
+    "html-to-text": "^7.1.1",
     "joi": "^13.4.0",
     "jsonwebtoken": "^8.3.0",
-    "morgan": "^1.9.0",
+    "morgan": "^1.10.0",
     "multer": "^1.3.1",
     "mysql2": "^1.5.3",
-    "nodemailer": "^4.6.7",
-    "nodemon": "^1.17.5",
-    "npm": "^6.1.0",
-    "sequelize": "^4.38.0"
+    "nodemailer": "^6.6.1",
+    "nodemon": "^2.0.7",
+    "npm": "^6.14.13",
+    "sequelize": "^6.6.2"
   }
 }
